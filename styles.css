@@ -184,3 +184,11 @@ section {
         text-align: center;
     }
 }
+
+/* Make the main section occupy the full viewport height on desktop */
+@media (min-width: 801px) {
+    section {
+        min-height: calc(100vh - var(--header-height));
+        align-items: center; /* center content vertically */
+    }
+}
